@@ -8,21 +8,21 @@ use Illuminate\Support\ServiceProvider;
 
 class LaraChileanCongressServiceProvider extends ServiceProvider
 {
-	/**
-	 * Bootstrap the application services.
-	 */
-	public function boot()
-	{
-		//
-	}
+    /**
+     * Bootstrap the application services.
+     */
+    public function boot()
+    {
+        //
+    }
 
-	/**
-	 * Register the application services.
-	 */
-	public function register()
-	{
-		$this->app->singleton('Unforgivencl\LaraChileanCongress\CongressApi\ApiRequest', function () {
-			return new ApiRequest(new Client());
-		});
-	}
+    /**
+     * Register the application services.
+     */
+    public function register()
+    {
+        $this->app->singleton('Unforgivencl\LaraChileanCongress\CongressApi\ApiRequest', function () {
+            return new ApiRequest(new Client());
+        });
+    }
 }
