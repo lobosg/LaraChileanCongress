@@ -1,0 +1,23 @@
+{
+    "name": "unforgivencl/larachileancongress",
+    "description": "Provides an wrapper to opendata.congreso.cl with Laravel 5.3.",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "guillermo lobos",
+            "email": "guillermo.lobos.parada@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Unforgivencl\\LaraChileanCongress\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
