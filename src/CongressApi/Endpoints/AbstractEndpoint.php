@@ -113,7 +113,7 @@ abstract class AbstractEndpoint
 	}
 
 	/**
-	 * Send HTTP request to Chilean Law API.
+	 * Send HTTP request to Congress API.
 	 *
 	 * @param array $queryParameters Optional query string data
 	 *
