@@ -19,4 +19,15 @@ class SenatorRoomSession extends AbstractEndpoint
                 ]);
             });
     }
+
+    public function getSessionJournal()
+    {
+    	return $this->setHttpMethod('GET')
+            ->setUriGenerator(function ($params) {
+                return implode('', [
+                    'diariosesion.php?',
+                    'idsesion='.array_get($params, 'number'),
+                ]);
+            });
+    }
 }
